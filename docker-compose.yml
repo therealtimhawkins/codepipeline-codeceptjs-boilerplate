@@ -21,4 +21,3 @@ services:
       - /dev/shm:/dev/shm
     ports:
       - "4444:4444"
-    # can just be expose - 4444, but this allows you to see localhost:4444/wd/hub/static/resource/hub.html

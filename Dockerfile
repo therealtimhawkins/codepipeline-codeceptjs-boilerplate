@@ -6,4 +6,4 @@ COPY ./package.json ./package-lock.json ./app.js ./
 
 RUN npm install
 
-CMD [ "npm", "start" ]
+CMD tail -f /dev/null
