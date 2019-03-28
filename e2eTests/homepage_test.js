@@ -15,5 +15,13 @@ Scenario('Error message should flash when a postcode with no results is given', 
   I.amOnPage('http://reactuiservice.eu-west-2.elasticbeanstalk.com/');
   I.fillField('.searchBarTextInput', 'testingpostcode');
   I.click('.searchBarSubmitButton');
-  I.see('NO RESTAURANTS FOR YOU!', '.alertText');
+  I.waitForElement('//*[@id="root"]/div/div[2]/div[2]/div/div/div', 10);
+});
+
+Scenario('Should route to /restaurants if results are found...', I => {
+  I.amOnPage('http://reactuiservice.eu-west-2.elasticbeanstalk.com/');
+  I.fillField('.searchBarTextInput', 'E147DX');
+  I.click('.searchBarSubmitButton');
+  I.waitForElement('.restaurantTile', 10);
+  I.seeInCurrentUrl("/restaurants");
 });
