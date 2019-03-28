@@ -1,7 +1,7 @@
 version: "2"
 services:
-  app-express:
-    container_name: app-express
+  webdriverio-container:
+    container_name: webdriverio-container
     build: .
     ports:
       - "3000:3000"
