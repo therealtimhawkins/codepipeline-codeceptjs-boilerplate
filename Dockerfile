@@ -2,7 +2,7 @@ FROM node:carbon
 
 WORKDIR ./
 
-COPY ./package.json ./package-lock.json ./app.js ./
+COPY ./package.json ./package-lock.json ./
 
 RUN npm install
 

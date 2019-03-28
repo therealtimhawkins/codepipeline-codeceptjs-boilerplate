@@ -12,7 +12,6 @@ services:
       - ./package.json:/package.json
       - ./package-lock.json:/package-lock.json
       - ./.gitignore:/.gitignore
-      - ./app.js:/app.js
 
   chrome-container:
     container_name: chrome-container
