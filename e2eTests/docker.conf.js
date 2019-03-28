@@ -3,7 +3,7 @@ exports.config = {
   output: './output',
   helpers: {
     WebDriver: {
-      url: 'http://app-express:3000',
+      url: 'http://webdriverio-container:3000',
       host: 'chrome-container',
       browser: 'chrome',
       smartWait: 5000,
