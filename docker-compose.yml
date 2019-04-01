@@ -12,6 +12,8 @@ services:
       - ./package.json:/package.json
       - ./package-lock.json:/package-lock.json
       - ./.gitignore:/.gitignore
+    environment:
+      UrlToTest: 'https://www.google.com'
 
   chrome-container:
     container_name: chrome-container
