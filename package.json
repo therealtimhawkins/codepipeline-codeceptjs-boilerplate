@@ -5,7 +5,7 @@
   "author": "Tim Hawkins",
   "license": "ISC",
   "scripts": {
-    "test:e2e": "codeceptjs run --steps --verbose --config=./e2eTests/docker.conf.js"
+    "test:e2e": "\"./node_modules/.bin/codeceptjs\" run --steps --verbose --config=./e2eTests/docker.conf.js"
   },
   "devDependencies": {
     "codeceptjs": "^2.0.3",
