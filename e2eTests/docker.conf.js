@@ -3,7 +3,7 @@ exports.config = {
   output: './output',
   helpers: {
     WebDriver: {
-      url: 'https://trade.cazana.com',
+      url: process.env.UrlToTest,
       host: 'selenium-ch',
       port: 4444,
       browser: 'chrome',
