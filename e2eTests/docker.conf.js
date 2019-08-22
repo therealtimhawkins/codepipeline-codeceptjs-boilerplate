@@ -5,6 +5,7 @@ exports.config = {
     WebDriver: {
       url: 'https://trade.cazana.com',
       host: 'selenium-ch',
+      port: 4444,
       browser: 'chrome',
       smartWait: 5000,
       restart: false,
