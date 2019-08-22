@@ -5,6 +5,8 @@
   "author": "Tim Hawkins",
   "license": "ISC",
   "scripts": {
+    "docker:up": "docker-compose up -d --build",
+    "docker:test": "docker exec -it codeceptio-container npm run test:e2e",
     "test:e2e": "\"./node_modules/.bin/codeceptjs\" run --steps --verbose --config=./e2eTests/docker.conf.js"
   },
   "devDependencies": {
